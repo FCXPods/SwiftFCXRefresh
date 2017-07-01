@@ -1,0 +1,6 @@
+framework module Pods_SwiftFCXRefreshDemo {
+  umbrella header "Pods-SwiftFCXRefreshDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
