@@ -115,11 +115,11 @@ public extension FCXRefreshBaseView {
         case noraml, pulling, loading, noMoreData
     }
     
-    public func fcxRefreshStateNormal() {}
-    public func fcxRefreshViewStatePulling() {}
-    public func fcxRefreshViewStateLoading() {}
-    public func fcxRefreshViewStateNoMoreData() {}
-    public func fcxRefreshBaseViewUpdateRefreshDate() {}
+    @objc public func fcxRefreshStateNormal() {}
+    @objc public func fcxRefreshViewStatePulling() {}
+    @objc public func fcxRefreshViewStateLoading() {}
+    @objc public func fcxRefreshViewStateNoMoreData() {}
+    @objc public func fcxRefreshBaseViewUpdateRefreshDate() {}
 }
 
 //MARK: KVO
@@ -161,6 +161,6 @@ extension FCXRefreshBaseView {
         }
     }
     
-    open func scrollViewContentOffsetDidChange(scrollView: UIScrollView) {}
+    @objc open func scrollViewContentOffsetDidChange(scrollView: UIScrollView) {}
 }
 
