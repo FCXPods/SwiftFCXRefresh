@@ -19,26 +19,13 @@ class RefreshTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "FCXRefresh"
-
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: refreshCellReuseId)
-        if selectedRow == 1 {
-            navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "自动刷新", style: .done, target: self, action: #selector(autoRefresh))
-        }
-        
         addRefreshView()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        //自动下拉刷新
-        if selectedRow == 1 {
-            autoRefresh()
-        }
+        setupConfig()
     }
 
     //自动下拉刷新
-    func autoRefresh() {
+    @objc func autoRefresh() {
         headerRefreshView?.autoRefresh()
     }
 
@@ -61,17 +48,21 @@ class RefreshTableViewController: UITableViewController {
         
         //显示百分比显示
         if selectedRow == 4 {
-            
-            let headerPercentLabel = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: view.frame.size.width, height: 44))
-            headerPercentLabel.textAlignment = .center
-            headerPercentLabel.layer.borderWidth = 0.5
-            headerPercentLabel.layer.borderColor = UIColor.lightGray.cgColor
+            let headerPercentLabel: UILabel = {
+                let headerPercentLabel = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: view.frame.size.width, height: 44))
+                headerPercentLabel.textAlignment = .center
+                headerPercentLabel.layer.borderWidth = 0.5
+                headerPercentLabel.layer.borderColor = UIColor.lightGray.cgColor
+                return headerPercentLabel
+            }()
+            let footererPercentLabel: UILabel = {
+                let footererPercentLabel = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: view.frame.size.width, height: 44))
+                footererPercentLabel.textAlignment = .center
+                footererPercentLabel.layer.borderWidth = 0.5
+                footererPercentLabel.layer.borderColor = UIColor.lightGray.cgColor
+                return footererPercentLabel
+            }()
             tableView.tableHeaderView = headerPercentLabel
-            
-            let footererPercentLabel = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: view.frame.size.width, height: 44))
-            footererPercentLabel.textAlignment = .center
-            footererPercentLabel.layer.borderWidth = 0.5
-            footererPercentLabel.layer.borderColor = UIColor.lightGray.cgColor
             tableView.tableFooterView = footererPercentLabel
             
             headerPercentLabel.text = "0%"
@@ -100,6 +91,96 @@ class RefreshTableViewController: UITableViewController {
              print("current percent", percent)
              }
              */
+        }
+    }
+    
+    func setupConfig() {
+        switch selectedRow {
+        case 0:
+            self.title = "普通"
+        case 1://自动下拉刷新
+            self.title = "自动下拉刷新"
+            headerRefreshView?.autoRefresh()
+            navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "自动刷新", style: .done, target: self, action: #selector(autoRefresh))
+        case 2://自动加载更多
+            self.title = "自动上拉加载更多"
+            footerRefreshView?.refreshType = .autoFooter;
+        case 3:
+            self.title = "上拉无更多数据"
+        case 4://显示百分比
+            self.title = "显示百分比"
+           let headerPercentLabel: UILabel = {
+                let headerPercentLabel = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: view.frame.size.width, height: 44))
+                headerPercentLabel.textAlignment = .center
+                headerPercentLabel.layer.borderWidth = 0.5
+                headerPercentLabel.layer.borderColor = UIColor.lightGray.cgColor
+                return headerPercentLabel
+            }()
+            let footererPercentLabel: UILabel = {
+                let footererPercentLabel = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: view.frame.size.width, height: 44))
+                footererPercentLabel.textAlignment = .center
+                footererPercentLabel.layer.borderWidth = 0.5
+                footererPercentLabel.layer.borderColor = UIColor.lightGray.cgColor
+                return footererPercentLabel
+            }()
+            tableView.tableHeaderView = headerPercentLabel
+            tableView.tableFooterView = footererPercentLabel
+            
+            headerPercentLabel.text = "0%"
+            footererPercentLabel.text = headerPercentLabel.text
+            
+            headerRefreshView?.pullingPercentHandler = { (percent) in
+                headerPercentLabel.text = String.init(format: "%.2f%%", percent * 100)
+            }
+            
+            footerRefreshView?.pullingPercentHandler = { (percent) in
+                footererPercentLabel.text = String.init(format: "%.2f%%", percent * 100)
+            }
+            
+            //百分比显示也支持下面这种方式
+            /*
+             headerRefreshView = tableView.addFCXRefreshHeader { [weak self] (refreshHeader) in
+             self?.refreshAction()
+             }.pullingPercentHandler(handler: { (percent) in
+             //百分比
+             print("current percent", percent)
+             })
+             
+             footerRefreshView = tableView.addFCXRefreshFooter { [weak self] (refreshHeader) in
+             self?.loadMoreAction()
+             }.pullingPercentHandler { (percent) in
+             print("current percent", percent)
+             }
+             */
+        case 5://底部间隙
+            self.title = "底部间隙"
+            footerRefreshView?.loadMoreBottomExtraSpace = 30;
+        case 6://自定义颜色
+            self.title = "自定义颜色"
+            headerRefreshView?.dateLabel.textColor = .red;
+            headerRefreshView?.statusLabel.textColor = .blue;
+            footerRefreshView?.statusLabel.textColor = .magenta;
+        case 7://自定义文本
+            self.title = "自定义文本"
+            headerRefreshView?.normalText = "normal"
+            headerRefreshView?.pullingText = "pulling"
+            headerRefreshView?.loadingText = "loading"
+            
+            footerRefreshView?.normalText = "normal"
+            footerRefreshView?.pullingText = "pulling"
+            footerRefreshView?.loadingText = "loading"
+            footerRefreshView?.noMoreDataText = "NoData"
+        case 8://隐藏时间
+            self.title = "隐藏时间"
+            headerRefreshView?.arrowOffsetX = 35
+            headerRefreshView?.hideDateView()
+            break;
+        case 9://隐藏状态和时间
+            self.title = "隐藏状态和时间"
+            headerRefreshView?.hideStatusAndDateView()
+            footerRefreshView?.hideStatusAndDateView()
+        default:
+            break
         }
     }
     

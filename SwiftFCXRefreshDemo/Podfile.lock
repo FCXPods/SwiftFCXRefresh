@@ -1,12 +1,16 @@
 PODS:
-  - SwiftFCXRefresh (0.1.0)
+  - SwiftFCXRefresh (0.1.1)
 
 DEPENDENCIES:
   - SwiftFCXRefresh
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftFCXRefresh
+
 SPEC CHECKSUMS:
-  SwiftFCXRefresh: 91ce596ba24cf451e9176f6eb98eee9f6c5b4cf1
+  SwiftFCXRefresh: 74cad61a77485cb510a23b485913039f347e67ce
 
 PODFILE CHECKSUM: 548714d8c1535fbf7a94d34deff2c032619041a6
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.6.1

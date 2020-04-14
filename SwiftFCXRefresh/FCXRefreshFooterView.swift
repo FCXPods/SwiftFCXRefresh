@@ -9,8 +9,12 @@
 import UIKit
 
 open class FCXRefreshFooterView: FCXRefreshBaseView {
-    var noMoreDataText = "没有更多数据"
-    let statusLabel: UILabel = {
+    public var noMoreDataText = "没有更多数据"
+    ///加载更多底部显示时额外的高度
+    public var loadMoreBottomExtraSpace: CGFloat = 0
+    ///加载更多时忽略ContentSize的高度是否大于自身frame高度（判断高度性能更好，默认值NO，也就是当ContentSize高度小于自身frame高度时不会加载更多），这里是为了处理数据内容小于自身高度还需自动加载更多
+    public var loadMoreIgnoreContentSize = false
+    public let statusLabel: UILabel = {
         let label = UILabel.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 20))
         label.font = UIFont.systemFont(ofSize: 12)
         label.textAlignment = .center
@@ -18,10 +22,10 @@ open class FCXRefreshFooterView: FCXRefreshBaseView {
         return label
     }()
     
-    lazy var arrowImageView = UIImageView.init(image: UIImage.init(named: "arrow", in: Bundle.init(for: FCXRefreshBaseView.self), compatibleWith: nil))
-    let activityView = UIActivityIndicatorView.init(activityIndicatorStyle: .gray)
+    lazy var arrowImageView = UIImageView.init(image: UIImage.init(named: "fcx_arrow", in: Bundle.init(for: FCXRefreshBaseView.self), compatibleWith: nil))
+    let activityView = UIActivityIndicatorView.init(style: .gray)
 
-    override open func setupContentView() {
+    override open func addRefreshContentView() {
         addSubview(statusLabel)
 
         if refreshType != .autoFooter {
@@ -38,45 +42,61 @@ open class FCXRefreshFooterView: FCXRefreshBaseView {
     
     open override func layoutSubviews() {
         super.layoutSubviews()
-        statusLabel.frame = CGRect.init(x: 0, y: 0, width: self.frame.size.width, height: 60)
-        if refreshType != .autoFooter {
-            arrowImageView.frame = CGRect.init(x: self.frame.size.width/2 - 90, y: 11, width: 15, height: 40)
-            activityView.frame = arrowImageView.frame
+        if !statusLabel.isHidden {
+            statusLabel.frame = CGRect.init(x: 0, y: 0, width: self.frame.size.width, height: hangingOffsetHeight)
+        }
+        if refreshType == .autoFooter {
+            activityView.frame = CGRect.init(x: self.frame.size.width/2 - 80, y: (hangingOffsetHeight - 40)/2.0, width: 15, height: 40)
         } else {
-            activityView.frame = CGRect.init(x: self.frame.size.width/2 - 90, y: 11, width: 15, height: 40)
+            arrowImageView.frame = CGRect.init(x: self.frame.size.width/2 - (statusLabel.isHidden ? 7.5 : 80) + arrowOffsetX, y: (hangingOffsetHeight - 40)/2.0, width: 15, height: 40)
+            activityView.frame = arrowImageView.frame
         }
     }
+    
+    open override func hideStatusAndDateView() {
+        statusLabel.isHidden = true
+        setNeedsLayout()
+    }
 
+    open override func scrollViewContentSizeDidChange(scrollView: UIScrollView) {
+        self.frame.origin.y = (max(scrollView.frame.size.height - self.scrollViewEdgeInsets.top - self.scrollViewEdgeInsets.bottom, scrollView.contentSize.height) + self.loadMoreBottomExtraSpace)
+    }
+    
     open override func scrollViewContentOffsetDidChange(scrollView: UIScrollView) {
         if state == .noMoreData {//没有更多数据
             return
         }
         
+        let edgeTop = self.scrollViewEdgeInsets.top
+        let edgeBotom = self.scrollViewEdgeInsets.bottom + self.loadMoreBottomExtraSpace
         //scrollview实际显示内容高度
-        let realHeight = scrollView.frame.size.height - scrollViewOriginalEdgeInsets.top - scrollViewOriginalEdgeInsets.bottom
+        let realHeight = scrollView.frame.size.height - edgeTop - edgeBotom
         /// 计算超出scrollView的高度
-        let beyondScrollViewHeight = scrollView.contentSize.height - realHeight
+        var beyondScrollViewHeight = scrollView.contentSize.height - realHeight
         
-        guard beyondScrollViewHeight > 0 else {
-            //scrollView的实际内容高度没有超出本身高度不处理
-            return
+        if beyondScrollViewHeight <= 0 {
+            if loadMoreIgnoreContentSize {
+                beyondScrollViewHeight = 0
+            } else {//scrollView的实际内容高度没有超出本身高度不处理
+                return
+            }
         }
         
         //刚刚出现底部控件时出现的offsetY
-        let offSetY = beyondScrollViewHeight - scrollViewOriginalEdgeInsets.top
+        let offSetY = beyondScrollViewHeight - edgeTop
         // 当前scrollView的contentOffsetY超出offsetY的高度
         let beyondOffsetHeight = scrollView.contentOffset.y - offSetY
         guard beyondOffsetHeight > 0 else {
             return;
         }
-        
-        if scrollView.isDecelerating && refreshType == .autoFooter {//如果是自动加载更多
-            state = .loading
-            return;
+        if refreshType == .autoFooter {//如果是自动加载更多
+            //大于偏移量，转为加载更多loading
+            state = .loading;
+            return
         }
-
+        
         if scrollView.isDragging {
-            if beyondOffsetHeight >= hangingHeight {
+            if beyondOffsetHeight >= hangingOffsetHeight {
                 state = .pulling
             } else {
                 state = .noraml
@@ -90,10 +110,7 @@ open class FCXRefreshFooterView: FCXRefreshBaseView {
         }
         
         if pullingPercentHandler != nil {
-            if beyondOffsetHeight <= hangingHeight {
-                //有时进度可能会到0.991..对精度要求没那么高可以忽略
-                pullingPercent = beyondOffsetHeight/hangingHeight;
-            }
+            pullingPercent = min(beyondOffsetHeight, hangingOffsetHeight)/hangingOffsetHeight;
         }
     }
     
@@ -121,7 +138,7 @@ open class FCXRefreshFooterView: FCXRefreshBaseView {
         arrowImageView.transform = CGAffineTransform.init(rotationAngle: 0.000001 - .pi)
         UIView.animate(withDuration: 0.2, animations: {
             var edgeInset = self.scrollViewOriginalEdgeInsets
-            edgeInset.bottom += self.hangingHeight
+            edgeInset.bottom += self.hangingOffsetHeight
             self.scrollView?.contentInset = edgeInset
         })
         

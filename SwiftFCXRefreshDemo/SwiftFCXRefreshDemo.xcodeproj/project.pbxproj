@@ -103,7 +103,6 @@
 				8A39AD0C1F0726EE00E245E7 /* Frameworks */,
 				8A39AD0D1F0726EE00E245E7 /* Resources */,
 				C89D46D0830D4B83CDA5218E /* [CP] Embed Pods Frameworks */,
-				F3CE95612811D921C61CCD8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,7 +125,7 @@
 				TargetAttributes = {
 					8A39AD0E1F0726EE00E245E7 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = DLHH8HAF9C;
+						DevelopmentTeam = V5S25J9BX6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +135,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -169,13 +169,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftFCXRefreshDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C89D46D0830D4B83CDA5218E /* [CP] Embed Pods Frameworks */ = {
@@ -184,28 +187,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftFCXRefresh/SwiftFCXRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftFCXRefresh.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3CE95612811D921C61CCD8E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -341,13 +332,16 @@
 			baseConfigurationReference = 59F222443CCA477472F9DA4B /* Pods-SwiftFCXRefreshDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DLHH8HAF9C;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5S25J9BX6;
 				INFOPLIST_FILE = SwiftFCXRefreshDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.SwiftFCXRefreshDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shark.SwiftFCXRefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -356,13 +350,16 @@
 			baseConfigurationReference = B46A0B9CF88A970991F6E1D8 /* Pods-SwiftFCXRefreshDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DLHH8HAF9C;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5S25J9BX6;
 				INFOPLIST_FILE = SwiftFCXRefreshDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.SwiftFCXRefreshDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shark.SwiftFCXRefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         addRefreshView()
     }
     
-    func autoRefresh() {
+    @objc func autoRefresh() {
         headerRefreshView?.autoRefresh()
     }
 
@@ -37,36 +37,43 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         headerRefreshView = tableView.addFCXRefreshHeader { (refreshHeader) in
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                 self.rows = 15
-                
                 refreshHeader.endRefresh()
                 self.tableView.reloadData()
             }}.pullingPercentHandler(handler: { (percent) in
-                print("current percent is", percent)
+
             })
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseId, for: indexPath)
-        
         switch (indexPath.row) {
-            case 0:
-                cell.textLabel?.text = "下拉刷新+上拉刷新";
-            case 1:
-                cell.textLabel?.text = "自动下拉刷新+上拉刷新";
-            case 2:
-                cell.textLabel?.text = "下拉刷新+上拉自动刷新";
-            case 3:
-                cell.textLabel?.text = "下拉刷新+上拉刷新(控制加载个数)";
-            case 4:
-                cell.textLabel?.text = "下拉刷新+上拉刷新(显示百分比)";
-            default:
-                break;
+        case 0:
+            cell.textLabel?.text = "上下拉刷新（普通）"
+        case 1:
+            cell.textLabel?.text = "上下拉刷新（自动下拉加载）"
+        case 2:
+            cell.textLabel?.text = "上下拉刷新（自动上拉加载）"
+        case 3:
+            cell.textLabel?.text = "上下拉刷新（上拉无更多数据）"
+        case 4:
+            cell.textLabel?.text = "上下拉刷新（显示百分比）"
+        case 5:
+            cell.textLabel?.text = "上下拉刷新（底部间隙）"
+        case 6:
+            cell.textLabel?.text = "上下拉刷新（自定义颜色）"
+        case 7:
+            cell.textLabel?.text = "上下拉刷新（自定义文本）"
+        case 8:
+            cell.textLabel?.text = "上下拉刷新（隐藏时间）"
+        case 9:
+            cell.textLabel?.text = "上下拉刷新（隐藏状态和时间）"
+        default:
+            break;
         }
-
         return cell
     }
 
