@@ -1,5 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SwiftFCXRefresh"
+  s.swift_version = '5.2'
   s.version      = "0.1.2"
   s.summary      = "Swift版上下拉刷新."
   s.description  = <<-DESC
