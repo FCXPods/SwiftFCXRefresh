@@ -22,7 +22,7 @@ open class FCXRefreshHeaderView: FCXRefreshBaseView {
     public let arrowImageView = UIImageView.init(image: UIImage.init(named: "fcx_arrow", in: Bundle.init(for: FCXRefreshBaseView.self), compatibleWith: nil))
     let activityView = UIActivityIndicatorView.init(style: .gray)
     
-    override open func addRefreshContentView() {
+    override open func addRefreshContentView() { 
         addSubview(statusLabel)
         addSubview(dateLabel)
         addSubview(arrowImageView)

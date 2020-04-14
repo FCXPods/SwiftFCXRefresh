@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'SwiftFCXRefreshDemo' do
 
-   pod 'SwiftFCXRefresh'
+ pod 'SwiftFCXRefresh'
+ #pod 'SwiftFCXRefresh',  :path=> '/Users/FCXPods/SwiftFCXRefresh'
 
 end

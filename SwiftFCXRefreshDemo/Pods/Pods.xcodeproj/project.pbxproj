@@ -7,146 +7,176 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1170BE34E4D2E53551A1A413A52F12A3 /* FCXRefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CCDEF02F79586B01BDB34FB67E8BE9 /* FCXRefreshBaseView.swift */; };
-		1E592D2F6C88C7B814322D8360A8611B /* Pods-SwiftFCXRefreshDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4947D7C5CA0753E9EDD34D8E8D50628 /* Pods-SwiftFCXRefreshDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D8682B4ADE46F98AB6B6BD9BE965471 /* Pods-SwiftFCXRefreshDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C95BEED42F72818A5F22A2FEB333DA81 /* Pods-SwiftFCXRefreshDemo-dummy.m */; };
-		4CB169BB5CF9431E0401356FEC81FEB7 /* fcx_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A57E6FED9F0854DBF198BBFB82F8A328 /* fcx_arrow@2x.png */; };
-		6AFB84836E37013CBEA6A6DADCE0DFB4 /* SwiftFCXRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F758B684D4A7E7CA737F2D15BD4B526 /* SwiftFCXRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A289EC38151A408C84158624681146B1 /* UIScrollView+FCXRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D059B955C713A92801E3115DDE40D3 /* UIScrollView+FCXRefresh.swift */; };
-		ACDC4100B2BCBE8B0905B294E3C20B31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		B3A603CDD4EC835DE56A994A70AB4249 /* FCXRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A596115955A8C67B6CB4B51BA5609 /* FCXRefreshHeaderView.swift */; };
-		CC6B15E648C3D395572DC560D82F5233 /* FCXRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C599E87397C2751909985D12F8AC1 /* FCXRefreshFooterView.swift */; };
-		F936F117609F19DDE9FB3D9BF4D3D26A /* SwiftFCXRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6A9C70D4270B4FD71F8E5C374B7DE5 /* SwiftFCXRefresh-dummy.m */; };
-		FEDA16811B96ECCCF188311E0359FDF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		25D3816CB6E68FCCC259F1ABAE381ADC /* UIScrollView+FCXRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2B7CB268714D75A35FEB422DC18BC /* UIScrollView+FCXRefresh.swift */; };
+		432EF95C85867BA8DC89541315A60C30 /* FCXRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D123D7C63BCB1A1D83147E9280BC0350 /* FCXRefreshHeaderView.swift */; };
+		607B08AA8C7BEE919388ABEBD346C99E /* fcx_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B265EEFBAE3B522EC5D59F49A70AE060 /* fcx_arrow@2x.png */; };
+		A4DACBE5C190C83719CABBDAE0F54C41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B35841E768F3E012E488FD4567898110 /* Pods-SwiftFCXRefreshDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 494C8D251B6655ED1164013C7899FE95 /* Pods-SwiftFCXRefreshDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B966A35C4C22CAD7FFA70FE931038252 /* SwiftFCXRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C49410A3A8D2DC324DCB53A48F097465 /* SwiftFCXRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFD3B3786ABDEE8A374395973BA9055A /* Pods-SwiftFCXRefreshDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD761615454DB3803226E3729164EF83 /* Pods-SwiftFCXRefreshDemo-dummy.m */; };
+		C434CC5972F8BEF0CFC688D22C18C41B /* SwiftFCXRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB046A0878292607A2D655749BA79A95 /* SwiftFCXRefresh-dummy.m */; };
+		E6E1D8C65FE474E6681C3BB99409877F /* FCXRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE9213507F1031CDDF29744967A6D3 /* FCXRefreshFooterView.swift */; };
+		FBCAEF8ADDD702A651F76288246CECE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		FC4DD43A2C7E2AF49848A6F85DD34D7A /* FCXRefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1F20888DAF8BDB1772072ED81DA28 /* FCXRefreshBaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7C94801EE0ADFB41881B0A99EC846EE5 /* PBXContainerItemProxy */ = {
+		8ADAB6DA9964134A8FC5DA068A98D714 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CB980D7F29082084BF1EAD64C2F96440;
+			remoteGlobalIDString = A209E5D0A2113E5C07E49BF018DA5D0A;
 			remoteInfo = SwiftFCXRefresh;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A3A596115955A8C67B6CB4B51BA5609 /* FCXRefreshHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshHeaderView.swift; path = SwiftFCXRefresh/FCXRefreshHeaderView.swift; sourceTree = "<group>"; };
-		113CA1A26B0A4E62294C1DC0A82B208C /* Pods-SwiftFCXRefreshDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftFCXRefreshDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		19C08B2D9FE7CB31819D96D5BA38961B /* SwiftFCXRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftFCXRefresh-prefix.pch"; sourceTree = "<group>"; };
-		224689199948B35CC782D9E6690FCF11 /* SwiftFCXRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFCXRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		30ACBA485DCB0D42AA790D8C5380CF0D /* Pods-SwiftFCXRefreshDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftFCXRefreshDemo-frameworks.sh"; sourceTree = "<group>"; };
-		3B1CA4F10A700FF935CC0E24AF21AAAD /* SwiftFCXRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftFCXRefresh-Info.plist"; sourceTree = "<group>"; };
-		3E6A9C70D4270B4FD71F8E5C374B7DE5 /* SwiftFCXRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftFCXRefresh-dummy.m"; sourceTree = "<group>"; };
-		48D059B955C713A92801E3115DDE40D3 /* UIScrollView+FCXRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+FCXRefresh.swift"; path = "SwiftFCXRefresh/UIScrollView+FCXRefresh.swift"; sourceTree = "<group>"; };
-		4F758B684D4A7E7CA737F2D15BD4B526 /* SwiftFCXRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftFCXRefresh-umbrella.h"; sourceTree = "<group>"; };
-		55FE3D29D56A431CE350424BFC232718 /* SwiftFCXRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftFCXRefresh.modulemap; sourceTree = "<group>"; };
-		5BFD9258A7D64706D1BF28C96EF85392 /* Pods_SwiftFCXRefreshDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftFCXRefreshDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65E70C03A2F4C3CB7FD5677FAD049910 /* Pods-SwiftFCXRefreshDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftFCXRefreshDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		6A6148F60C0079B4F14153BDAE7E0887 /* SwiftFCXRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFCXRefresh.xcconfig; sourceTree = "<group>"; };
-		9369ED06378F37A7D5F90FDD0E0A998E /* Pods-SwiftFCXRefreshDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftFCXRefreshDemo-Info.plist"; sourceTree = "<group>"; };
+		04C1F20888DAF8BDB1772072ED81DA28 /* FCXRefreshBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshBaseView.swift; path = SwiftFCXRefresh/FCXRefreshBaseView.swift; sourceTree = "<group>"; };
+		05C897BBD5107C795F371DC0634C9360 /* Pods-SwiftFCXRefreshDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftFCXRefreshDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1D63E8A67BDA22A230D9F6EBE0919161 /* Pods-SwiftFCXRefreshDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftFCXRefreshDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2CF2B7CB268714D75A35FEB422DC18BC /* UIScrollView+FCXRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+FCXRefresh.swift"; path = "SwiftFCXRefresh/UIScrollView+FCXRefresh.swift"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3BF8CA0A226525FA9EB8751762D7E272 /* SwiftFCXRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFCXRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		494C8D251B6655ED1164013C7899FE95 /* Pods-SwiftFCXRefreshDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftFCXRefreshDemo-umbrella.h"; sourceTree = "<group>"; };
+		4D825DE70D256068A3AE4DC9A35C256E /* SwiftFCXRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftFCXRefresh-Info.plist"; sourceTree = "<group>"; };
+		5B31584A9D7A66F7B2222FB1F486D36A /* SwiftFCXRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftFCXRefresh.modulemap; sourceTree = "<group>"; };
+		707E458A21641259A8BE558DE9698615 /* Pods-SwiftFCXRefreshDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftFCXRefreshDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8F48478A412141CF09AEB11E2636BCDF /* Pods-SwiftFCXRefreshDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftFCXRefreshDemo.modulemap"; sourceTree = "<group>"; };
+		98D87D04EEA9AF2A3BA061753C3C77B6 /* SwiftFCXRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFCXRefresh.debug.xcconfig; sourceTree = "<group>"; };
+		9AD18764F295C0805E04CA4739B60BBC /* Pods-SwiftFCXRefreshDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftFCXRefreshDemo-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A57E6FED9F0854DBF198BBFB82F8A328 /* fcx_arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "fcx_arrow@2x.png"; path = "SwiftFCXRefresh/fcx_arrow@2x.png"; sourceTree = "<group>"; };
-		BB8070271400F564201E5C32FBD3442D /* Pods-SwiftFCXRefreshDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftFCXRefreshDemo.modulemap"; sourceTree = "<group>"; };
-		C0CCDEF02F79586B01BDB34FB67E8BE9 /* FCXRefreshBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshBaseView.swift; path = SwiftFCXRefresh/FCXRefreshBaseView.swift; sourceTree = "<group>"; };
-		C95BEED42F72818A5F22A2FEB333DA81 /* Pods-SwiftFCXRefreshDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftFCXRefreshDemo-dummy.m"; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D4C4A2C86F53273AC91D81D56421A1BC /* Pods-SwiftFCXRefreshDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftFCXRefreshDemo.release.xcconfig"; sourceTree = "<group>"; };
-		E0BD09ED9D07FEE317A80C4AAAE86122 /* Pods-SwiftFCXRefreshDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftFCXRefreshDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		E4947D7C5CA0753E9EDD34D8E8D50628 /* Pods-SwiftFCXRefreshDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftFCXRefreshDemo-umbrella.h"; sourceTree = "<group>"; };
-		F12C599E87397C2751909985D12F8AC1 /* FCXRefreshFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshFooterView.swift; path = SwiftFCXRefresh/FCXRefreshFooterView.swift; sourceTree = "<group>"; };
+		A23A2AAE6A78A31915A7F1FE366C4D45 /* Pods-SwiftFCXRefreshDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftFCXRefreshDemo-frameworks.sh"; sourceTree = "<group>"; };
+		AA97036890BA9C503BF39D7E3D621248 /* Pods_SwiftFCXRefreshDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftFCXRefreshDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEE17928C30D16DEBA1B46F6C75B913 /* SwiftFCXRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftFCXRefresh-prefix.pch"; sourceTree = "<group>"; };
+		B265EEFBAE3B522EC5D59F49A70AE060 /* fcx_arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "fcx_arrow@2x.png"; path = "SwiftFCXRefresh/fcx_arrow@2x.png"; sourceTree = "<group>"; };
+		B3B5C0872BA2147E89EBC5ED9ABC7FF8 /* SwiftFCXRefresh.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SwiftFCXRefresh.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B71D3688229E44ECDB39A1922FB27AD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C1FE9213507F1031CDDF29744967A6D3 /* FCXRefreshFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshFooterView.swift; path = SwiftFCXRefresh/FCXRefreshFooterView.swift; sourceTree = "<group>"; };
+		C49410A3A8D2DC324DCB53A48F097465 /* SwiftFCXRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftFCXRefresh-umbrella.h"; sourceTree = "<group>"; };
+		CB046A0878292607A2D655749BA79A95 /* SwiftFCXRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftFCXRefresh-dummy.m"; sourceTree = "<group>"; };
+		D123D7C63BCB1A1D83147E9280BC0350 /* FCXRefreshHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshHeaderView.swift; path = SwiftFCXRefresh/FCXRefreshHeaderView.swift; sourceTree = "<group>"; };
+		DD35ED2B73AB3D9605B4B3518B0D3A3F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F5D82E44D5CC7032E73BC3D2987145CC /* Pods-SwiftFCXRefreshDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftFCXRefreshDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD761615454DB3803226E3729164EF83 /* Pods-SwiftFCXRefreshDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftFCXRefreshDemo-dummy.m"; sourceTree = "<group>"; };
+		FDCAF8BB9BF39C05AEB162D0D2F10E7A /* SwiftFCXRefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFCXRefresh.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BF4593A6DBD15A1AF1FFC80B2DC4FA40 /* Frameworks */ = {
+		00C8DDA5F7738C66EEFBBC6A996BA810 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEDA16811B96ECCCF188311E0359FDF1 /* Foundation.framework in Frameworks */,
+				A4DACBE5C190C83719CABBDAE0F54C41 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F29783372E277534A2902E1694AE199C /* Frameworks */ = {
+		5B5D60B0AED0C7DF095322D90B717E16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACDC4100B2BCBE8B0905B294E3C20B31 /* Foundation.framework in Frameworks */,
+				FBCAEF8ADDD702A651F76288246CECE6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		018E4A4620319377088D7273A1B20654 /* SwiftFCXRefresh */ = {
+		03BB769FD4A592AB428C525A479075D0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0CCDEF02F79586B01BDB34FB67E8BE9 /* FCXRefreshBaseView.swift */,
-				0A3A596115955A8C67B6CB4B51BA5609 /* FCXRefreshHeaderView.swift */,
-				F12C599E87397C2751909985D12F8AC1 /* FCXRefreshFooterView.swift */,
-				48D059B955C713A92801E3115DDE40D3 /* UIScrollView+FCXRefresh.swift */,
-				B2AA340B0963A4131A95C531AD2A1070 /* Resources */,
-				F5E8A7F67C07701D1025FBEBA31AAA19 /* Support Files */,
+				62D70F009A42D565D86D967A3F51D3F1 /* SwiftFCXRefresh */,
 			);
-			path = SwiftFCXRefresh;
-			sourceTree = "<group>";
-		};
-		215358A18317FED3FB4B4AF02DE13019 /* Pods-SwiftFCXRefreshDemo */ = {
-			isa = PBXGroup;
-			children = (
-				BB8070271400F564201E5C32FBD3442D /* Pods-SwiftFCXRefreshDemo.modulemap */,
-				113CA1A26B0A4E62294C1DC0A82B208C /* Pods-SwiftFCXRefreshDemo-acknowledgements.markdown */,
-				E0BD09ED9D07FEE317A80C4AAAE86122 /* Pods-SwiftFCXRefreshDemo-acknowledgements.plist */,
-				C95BEED42F72818A5F22A2FEB333DA81 /* Pods-SwiftFCXRefreshDemo-dummy.m */,
-				30ACBA485DCB0D42AA790D8C5380CF0D /* Pods-SwiftFCXRefreshDemo-frameworks.sh */,
-				9369ED06378F37A7D5F90FDD0E0A998E /* Pods-SwiftFCXRefreshDemo-Info.plist */,
-				E4947D7C5CA0753E9EDD34D8E8D50628 /* Pods-SwiftFCXRefreshDemo-umbrella.h */,
-				65E70C03A2F4C3CB7FD5677FAD049910 /* Pods-SwiftFCXRefreshDemo.debug.xcconfig */,
-				D4C4A2C86F53273AC91D81D56421A1BC /* Pods-SwiftFCXRefreshDemo.release.xcconfig */,
-			);
-			name = "Pods-SwiftFCXRefreshDemo";
-			path = "Target Support Files/Pods-SwiftFCXRefreshDemo";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		305E67561137F9F9903589E2D0F6D53B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				215358A18317FED3FB4B4AF02DE13019 /* Pods-SwiftFCXRefreshDemo */,
+				42B3E65ACA8F6ADEE79B48377E152762 /* Pods-SwiftFCXRefreshDemo */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+		42B3E65ACA8F6ADEE79B48377E152762 /* Pods-SwiftFCXRefreshDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+				8F48478A412141CF09AEB11E2636BCDF /* Pods-SwiftFCXRefreshDemo.modulemap */,
+				05C897BBD5107C795F371DC0634C9360 /* Pods-SwiftFCXRefreshDemo-acknowledgements.markdown */,
+				F5D82E44D5CC7032E73BC3D2987145CC /* Pods-SwiftFCXRefreshDemo-acknowledgements.plist */,
+				FD761615454DB3803226E3729164EF83 /* Pods-SwiftFCXRefreshDemo-dummy.m */,
+				A23A2AAE6A78A31915A7F1FE366C4D45 /* Pods-SwiftFCXRefreshDemo-frameworks.sh */,
+				9AD18764F295C0805E04CA4739B60BBC /* Pods-SwiftFCXRefreshDemo-Info.plist */,
+				494C8D251B6655ED1164013C7899FE95 /* Pods-SwiftFCXRefreshDemo-umbrella.h */,
+				1D63E8A67BDA22A230D9F6EBE0919161 /* Pods-SwiftFCXRefreshDemo.debug.xcconfig */,
+				707E458A21641259A8BE558DE9698615 /* Pods-SwiftFCXRefreshDemo.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Pods-SwiftFCXRefreshDemo";
+			path = "Target Support Files/Pods-SwiftFCXRefreshDemo";
 			sourceTree = "<group>";
 		};
-		A1AB36438084D19CF818A54A48BDC74F /* Products */ = {
+		62D70F009A42D565D86D967A3F51D3F1 /* SwiftFCXRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				5BFD9258A7D64706D1BF28C96EF85392 /* Pods_SwiftFCXRefreshDemo.framework */,
-				224689199948B35CC782D9E6690FCF11 /* SwiftFCXRefresh.framework */,
+				04C1F20888DAF8BDB1772072ED81DA28 /* FCXRefreshBaseView.swift */,
+				C1FE9213507F1031CDDF29744967A6D3 /* FCXRefreshFooterView.swift */,
+				D123D7C63BCB1A1D83147E9280BC0350 /* FCXRefreshHeaderView.swift */,
+				2CF2B7CB268714D75A35FEB422DC18BC /* UIScrollView+FCXRefresh.swift */,
+				95EA590149A2FF5B4CDBA2D28952EF8E /* Pod */,
+				B7058C85DA9B3A9D0E11613758F667A6 /* Resources */,
+				872A05DEDF8F5C4CE2F5230372632629 /* Support Files */,
 			);
-			name = Products;
+			name = SwiftFCXRefresh;
+			path = /Users/FCXPods/SwiftFCXRefresh;
+			sourceTree = "<absolute>";
+		};
+		872A05DEDF8F5C4CE2F5230372632629 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B31584A9D7A66F7B2222FB1F486D36A /* SwiftFCXRefresh.modulemap */,
+				CB046A0878292607A2D655749BA79A95 /* SwiftFCXRefresh-dummy.m */,
+				4D825DE70D256068A3AE4DC9A35C256E /* SwiftFCXRefresh-Info.plist */,
+				ADEE17928C30D16DEBA1B46F6C75B913 /* SwiftFCXRefresh-prefix.pch */,
+				C49410A3A8D2DC324DCB53A48F097465 /* SwiftFCXRefresh-umbrella.h */,
+				98D87D04EEA9AF2A3BA061753C3C77B6 /* SwiftFCXRefresh.debug.xcconfig */,
+				FDCAF8BB9BF39C05AEB162D0D2F10E7A /* SwiftFCXRefresh.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "SwiftFCXRefreshDemo/Pods/Target Support Files/SwiftFCXRefresh";
 			sourceTree = "<group>";
 		};
-		B2AA340B0963A4131A95C531AD2A1070 /* Resources */ = {
+		95EA590149A2FF5B4CDBA2D28952EF8E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A57E6FED9F0854DBF198BBFB82F8A328 /* fcx_arrow@2x.png */,
+				B71D3688229E44ECDB39A1922FB27AD7 /* LICENSE */,
+				DD35ED2B73AB3D9605B4B3518B0D3A3F /* README.md */,
+				B3B5C0872BA2147E89EBC5ED9ABC7FF8 /* SwiftFCXRefresh.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B7058C85DA9B3A9D0E11613758F667A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B265EEFBAE3B522EC5D59F49A70AE060 /* fcx_arrow@2x.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03BB769FD4A592AB428C525A479075D0 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F08E18057B59E4F8F43F0992C47B13F4 /* Pods */,
-				A1AB36438084D19CF818A54A48BDC74F /* Products */,
+				D6F56262917584363890D9358489FE08 /* Products */,
 				305E67561137F9F9903589E2D0F6D53B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -154,82 +184,50 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F08E18057B59E4F8F43F0992C47B13F4 /* Pods */ = {
+		D6F56262917584363890D9358489FE08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				018E4A4620319377088D7273A1B20654 /* SwiftFCXRefresh */,
+				AA97036890BA9C503BF39D7E3D621248 /* Pods_SwiftFCXRefreshDemo.framework */,
+				3BF8CA0A226525FA9EB8751762D7E272 /* SwiftFCXRefresh.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F5E8A7F67C07701D1025FBEBA31AAA19 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				55FE3D29D56A431CE350424BFC232718 /* SwiftFCXRefresh.modulemap */,
-				6A6148F60C0079B4F14153BDAE7E0887 /* SwiftFCXRefresh.xcconfig */,
-				3E6A9C70D4270B4FD71F8E5C374B7DE5 /* SwiftFCXRefresh-dummy.m */,
-				3B1CA4F10A700FF935CC0E24AF21AAAD /* SwiftFCXRefresh-Info.plist */,
-				19C08B2D9FE7CB31819D96D5BA38961B /* SwiftFCXRefresh-prefix.pch */,
-				4F758B684D4A7E7CA737F2D15BD4B526 /* SwiftFCXRefresh-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftFCXRefresh";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4AF30D30C7CCE7D5D33357624BF50BC2 /* Headers */ = {
+		619EADE16A610353EAE9084F0B46A9B1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E592D2F6C88C7B814322D8360A8611B /* Pods-SwiftFCXRefreshDemo-umbrella.h in Headers */,
+				B966A35C4C22CAD7FFA70FE931038252 /* SwiftFCXRefresh-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		659863F8DE79A3D71EF0D2DEB919BE0A /* Headers */ = {
+		F4BC7F565817760DA76CCB16656A9396 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AFB84836E37013CBEA6A6DADCE0DFB4 /* SwiftFCXRefresh-umbrella.h in Headers */,
+				B35841E768F3E012E488FD4567898110 /* Pods-SwiftFCXRefreshDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C85F3D1A1871F7756F8E2E267B8274D9 /* Pods-SwiftFCXRefreshDemo */ = {
+		A209E5D0A2113E5C07E49BF018DA5D0A /* SwiftFCXRefresh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB8444EE9B1C91EFA732F0C02884F4C0 /* Build configuration list for PBXNativeTarget "Pods-SwiftFCXRefreshDemo" */;
+			buildConfigurationList = 1D86C3289900260E53941C84FC2AD939 /* Build configuration list for PBXNativeTarget "SwiftFCXRefresh" */;
 			buildPhases = (
-				4AF30D30C7CCE7D5D33357624BF50BC2 /* Headers */,
-				04D2FFD8DFF3673B7DF9D2A4A9CBEB02 /* Sources */,
-				F29783372E277534A2902E1694AE199C /* Frameworks */,
-				3CE5AAB4015938658831062476C627BF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				30EB6C2E0636C749977B11AC795340C2 /* PBXTargetDependency */,
-			);
-			name = "Pods-SwiftFCXRefreshDemo";
-			productName = "Pods-SwiftFCXRefreshDemo";
-			productReference = 5BFD9258A7D64706D1BF28C96EF85392 /* Pods_SwiftFCXRefreshDemo.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CB980D7F29082084BF1EAD64C2F96440 /* SwiftFCXRefresh */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CDDD546AFF952394DBE6C998B318EA5D /* Build configuration list for PBXNativeTarget "SwiftFCXRefresh" */;
-			buildPhases = (
-				659863F8DE79A3D71EF0D2DEB919BE0A /* Headers */,
-				D9F95902D1C42E9526BB99F3E4D11192 /* Sources */,
-				BF4593A6DBD15A1AF1FFC80B2DC4FA40 /* Frameworks */,
-				CEE30D9E0C934FE02EAA9749410DDDFD /* Resources */,
+				619EADE16A610353EAE9084F0B46A9B1 /* Headers */,
+				F917A2C1322E287981F909D4C8249A96 /* Sources */,
+				5B5D60B0AED0C7DF095322D90B717E16 /* Frameworks */,
+				A7D8ABB6404D67C1C4ED4C9BBBCEF885 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -237,7 +235,26 @@
 			);
 			name = SwiftFCXRefresh;
 			productName = SwiftFCXRefresh;
-			productReference = 224689199948B35CC782D9E6690FCF11 /* SwiftFCXRefresh.framework */;
+			productReference = 3BF8CA0A226525FA9EB8751762D7E272 /* SwiftFCXRefresh.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDE6B48BC1E89B68DAC04E04F95CF82F /* Pods-SwiftFCXRefreshDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292157D4BB990EC36C8006E3EA80E02A /* Build configuration list for PBXNativeTarget "Pods-SwiftFCXRefreshDemo" */;
+			buildPhases = (
+				F4BC7F565817760DA76CCB16656A9396 /* Headers */,
+				CA42F33287B60CE0999947CE76C66641 /* Sources */,
+				00C8DDA5F7738C66EEFBBC6A996BA810 /* Frameworks */,
+				D3657297674E5155A01259BAEBA1362E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A6DDC65A96F40AB13B7113C9224843A /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftFCXRefreshDemo";
+			productName = "Pods-SwiftFCXRefreshDemo";
+			productReference = AA97036890BA9C503BF39D7E3D621248 /* Pods_SwiftFCXRefreshDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -246,80 +263,80 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = A1AB36438084D19CF818A54A48BDC74F /* Products */;
+			productRefGroup = D6F56262917584363890D9358489FE08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C85F3D1A1871F7756F8E2E267B8274D9 /* Pods-SwiftFCXRefreshDemo */,
-				CB980D7F29082084BF1EAD64C2F96440 /* SwiftFCXRefresh */,
+				EDE6B48BC1E89B68DAC04E04F95CF82F /* Pods-SwiftFCXRefreshDemo */,
+				A209E5D0A2113E5C07E49BF018DA5D0A /* SwiftFCXRefresh */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3CE5AAB4015938658831062476C627BF /* Resources */ = {
+		A7D8ABB6404D67C1C4ED4C9BBBCEF885 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607B08AA8C7BEE919388ABEBD346C99E /* fcx_arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEE30D9E0C934FE02EAA9749410DDDFD /* Resources */ = {
+		D3657297674E5155A01259BAEBA1362E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CB169BB5CF9431E0401356FEC81FEB7 /* fcx_arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04D2FFD8DFF3673B7DF9D2A4A9CBEB02 /* Sources */ = {
+		CA42F33287B60CE0999947CE76C66641 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8682B4ADE46F98AB6B6BD9BE965471 /* Pods-SwiftFCXRefreshDemo-dummy.m in Sources */,
+				BFD3B3786ABDEE8A374395973BA9055A /* Pods-SwiftFCXRefreshDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9F95902D1C42E9526BB99F3E4D11192 /* Sources */ = {
+		F917A2C1322E287981F909D4C8249A96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1170BE34E4D2E53551A1A413A52F12A3 /* FCXRefreshBaseView.swift in Sources */,
-				CC6B15E648C3D395572DC560D82F5233 /* FCXRefreshFooterView.swift in Sources */,
-				B3A603CDD4EC835DE56A994A70AB4249 /* FCXRefreshHeaderView.swift in Sources */,
-				F936F117609F19DDE9FB3D9BF4D3D26A /* SwiftFCXRefresh-dummy.m in Sources */,
-				A289EC38151A408C84158624681146B1 /* UIScrollView+FCXRefresh.swift in Sources */,
+				FC4DD43A2C7E2AF49848A6F85DD34D7A /* FCXRefreshBaseView.swift in Sources */,
+				E6E1D8C65FE474E6681C3BB99409877F /* FCXRefreshFooterView.swift in Sources */,
+				432EF95C85867BA8DC89541315A60C30 /* FCXRefreshHeaderView.swift in Sources */,
+				C434CC5972F8BEF0CFC688D22C18C41B /* SwiftFCXRefresh-dummy.m in Sources */,
+				25D3816CB6E68FCCC259F1ABAE381ADC /* UIScrollView+FCXRefresh.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		30EB6C2E0636C749977B11AC795340C2 /* PBXTargetDependency */ = {
+		6A6DDC65A96F40AB13B7113C9224843A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftFCXRefresh;
-			target = CB980D7F29082084BF1EAD64C2F96440 /* SwiftFCXRefresh */;
-			targetProxy = 7C94801EE0ADFB41881B0A99EC846EE5 /* PBXContainerItemProxy */;
+			target = A209E5D0A2113E5C07E49BF018DA5D0A /* SwiftFCXRefresh */;
+			targetProxy = 8ADAB6DA9964134A8FC5DA068A98D714 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -373,110 +390,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		0A7329F393855295D5228BC295FF396B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4C4A2C86F53273AC91D81D56421A1BC /* Pods-SwiftFCXRefreshDemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2148806000F991E2CA287FC9D69F7FC7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65E70C03A2F4C3CB7FD5677FAD049910 /* Pods-SwiftFCXRefreshDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3942B0A7345400994FE7B2E1274011B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A6148F60C0079B4F14153BDAE7E0887 /* SwiftFCXRefresh.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh.modulemap";
-				PRODUCT_MODULE_NAME = SwiftFCXRefresh;
-				PRODUCT_NAME = SwiftFCXRefresh;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -535,14 +454,14 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		ED8CE983343601583B5E64F857DA195D /* Release */ = {
+		AAF7F9CBD56F78B6F4A1E37D708A269C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A6148F60C0079B4F14153BDAE7E0887 /* SwiftFCXRefresh.xcconfig */;
+			baseConfigurationReference = FDCAF8BB9BF39C05AEB162D0D2F10E7A /* SwiftFCXRefresh.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -572,32 +491,130 @@
 			};
 			name = Release;
 		};
+		ABF7E43C34F9063EA672BA6F2FD294F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 707E458A21641259A8BE558DE9698615 /* Pods-SwiftFCXRefreshDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD23EC46E75389619E864BFDE4AA444B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D87D04EEA9AF2A3BA061753C3C77B6 /* SwiftFCXRefresh.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh.modulemap";
+				PRODUCT_MODULE_NAME = SwiftFCXRefresh;
+				PRODUCT_NAME = SwiftFCXRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EAF4C0B4995647FE0A596C8B51802342 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D63E8A67BDA22A230D9F6EBE0919161 /* Pods-SwiftFCXRefreshDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftFCXRefreshDemo/Pods-SwiftFCXRefreshDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D86C3289900260E53941C84FC2AD939 /* Build configuration list for PBXNativeTarget "SwiftFCXRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD23EC46E75389619E864BFDE4AA444B /* Debug */,
+				AAF7F9CBD56F78B6F4A1E37D708A269C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292157D4BB990EC36C8006E3EA80E02A /* Build configuration list for PBXNativeTarget "Pods-SwiftFCXRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF4C0B4995647FE0A596C8B51802342 /* Debug */,
+				ABF7E43C34F9063EA672BA6F2FD294F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
-				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CDDD546AFF952394DBE6C998B318EA5D /* Build configuration list for PBXNativeTarget "SwiftFCXRefresh" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3942B0A7345400994FE7B2E1274011B1 /* Debug */,
-				ED8CE983343601583B5E64F857DA195D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EB8444EE9B1C91EFA732F0C02884F4C0 /* Build configuration list for PBXNativeTarget "Pods-SwiftFCXRefreshDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2148806000F991E2CA287FC9D69F7FC7 /* Debug */,
-				0A7329F393855295D5228BC295FF396B /* Release */,
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
