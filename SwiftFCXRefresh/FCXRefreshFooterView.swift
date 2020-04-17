@@ -9,7 +9,11 @@
 import UIKit
 
 open class FCXRefreshFooterView: FCXRefreshBaseView {
-    public var noMoreDataText = "没有更多数据"
+    public var noMoreDataText = "没有更多数据" {
+        didSet {
+            statusLabel.text = noMoreDataText
+        }
+    }
     ///加载更多底部显示时额外的高度
     public var loadMoreBottomExtraSpace: CGFloat = 0
     ///加载更多时忽略ContentSize的高度是否大于自身frame高度（判断高度性能更好，默认值NO，也就是当ContentSize高度小于自身frame高度时不会加载更多），这里是为了处理数据内容小于自身高度还需自动加载更多
@@ -59,7 +63,7 @@ open class FCXRefreshFooterView: FCXRefreshBaseView {
     }
 
     open override func scrollViewContentSizeDidChange(scrollView: UIScrollView) {
-        self.frame.origin.y = (max(scrollView.frame.size.height - self.scrollViewEdgeInsets.top - self.scrollViewEdgeInsets.bottom, scrollView.contentSize.height) + self.loadMoreBottomExtraSpace)
+        self.frame.origin.y = (max(scrollView.frame.size.height - self.scrollViewEdgeInsets.top - self.scrollViewEdgeInsets.bottom, scrollView.contentSize.height)) + self.loadMoreBottomExtraSpace
     }
     
     open override func scrollViewContentOffsetDidChange(scrollView: UIScrollView) {
@@ -114,7 +118,7 @@ open class FCXRefreshFooterView: FCXRefreshBaseView {
         }
     }
     
-    open override func fcxRefreshStateNormal() {
+    open override func fcxChangeToStatusNormal() {
         statusLabel.text = normalText
         activityView.stopAnimating()
         arrowImageView.isHidden = false
@@ -124,33 +128,33 @@ open class FCXRefreshFooterView: FCXRefreshBaseView {
         })
     }
     
-    open override func fcxRefreshViewStatePulling() {
+    open override func fcxChangeToStatusPulling() {
         statusLabel.text = pullingText
         UIView.animate(withDuration: 0.2, animations: {
             self.arrowImageView.transform = .identity
         })
     }
     
-    open override func fcxRefreshViewStateLoading() {
+    open override func fcxChangeToStatusLoading() {
         statusLabel.text = loadingText
         activityView.startAnimating()
         arrowImageView.isHidden = true
         arrowImageView.transform = CGAffineTransform.init(rotationAngle: 0.000001 - .pi)
         UIView.animate(withDuration: 0.2, animations: {
             var edgeInset = self.scrollViewOriginalEdgeInsets
-            edgeInset.bottom += self.hangingOffsetHeight
+            edgeInset.bottom += (self.hangingOffsetHeight + self.loadMoreBottomExtraSpace)
             self.scrollView?.contentInset = edgeInset
         })
         
         refreshHandler?(self as FCXRefreshBaseView)
     }
 
-    open override func fcxRefreshViewStateNoMoreData() {
+    open override func fcxChangeToStatusNoMoreData() {
         statusLabel.text = noMoreDataText
     }
     
     open override func showNoMoreData() {
-        fcxRefreshStateNormal()
+        fcxChangeToStatusNormal()
         state = .noMoreData
         if refreshType != .autoFooter {
             arrowImageView.isHidden = true

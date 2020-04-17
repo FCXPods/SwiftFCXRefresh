@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25D3816CB6E68FCCC259F1ABAE381ADC /* UIScrollView+FCXRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2B7CB268714D75A35FEB422DC18BC /* UIScrollView+FCXRefresh.swift */; };
-		432EF95C85867BA8DC89541315A60C30 /* FCXRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D123D7C63BCB1A1D83147E9280BC0350 /* FCXRefreshHeaderView.swift */; };
-		607B08AA8C7BEE919388ABEBD346C99E /* fcx_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B265EEFBAE3B522EC5D59F49A70AE060 /* fcx_arrow@2x.png */; };
+		0A9185299A3A37D8BD422592AB44C49C /* FCXRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3602E2FC1858F33E37DD824E5A09A76A /* FCXRefreshFooterView.swift */; };
+		1B71CAAC01DB04F11BE9CEE90220EBF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2E748FC0058AB536514FE46A44DE2D16 /* SwiftFCXRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1E9A9C75A8647F958727E23D0FFD7F /* SwiftFCXRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53E1C0E9C3DC12586CD414B7060B21C3 /* UIScrollView+FCXRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CAB313FF1322D60B0BD3EA4A91C288 /* UIScrollView+FCXRefresh.swift */; };
+		6216C8ED836F50E23816188C53C9E952 /* FCXRefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6E971580D143D9B637D1EC97918D9 /* FCXRefreshBaseView.swift */; };
+		7736A1A24F7D78B8E5CE7875E075A8AC /* fcx_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A0BEB964175971D8D5E7F3FD6E8826F /* fcx_arrow@2x.png */; };
+		8C00700BE770078005BC283851E0F260 /* FCXRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192143649C7D2665C5795C3A62BCD35 /* FCXRefreshHeaderView.swift */; };
 		A4DACBE5C190C83719CABBDAE0F54C41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AC68C854BC8A8D354E43585CE37F16EA /* SwiftFCXRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC676195EAFFE79454B86D3F6EC67E7F /* SwiftFCXRefresh-dummy.m */; };
 		B35841E768F3E012E488FD4567898110 /* Pods-SwiftFCXRefreshDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 494C8D251B6655ED1164013C7899FE95 /* Pods-SwiftFCXRefreshDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B966A35C4C22CAD7FFA70FE931038252 /* SwiftFCXRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C49410A3A8D2DC324DCB53A48F097465 /* SwiftFCXRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFD3B3786ABDEE8A374395973BA9055A /* Pods-SwiftFCXRefreshDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD761615454DB3803226E3729164EF83 /* Pods-SwiftFCXRefreshDemo-dummy.m */; };
-		C434CC5972F8BEF0CFC688D22C18C41B /* SwiftFCXRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB046A0878292607A2D655749BA79A95 /* SwiftFCXRefresh-dummy.m */; };
-		E6E1D8C65FE474E6681C3BB99409877F /* FCXRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE9213507F1031CDDF29744967A6D3 /* FCXRefreshFooterView.swift */; };
-		FBCAEF8ADDD702A651F76288246CECE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FC4DD43A2C7E2AF49848A6F85DD34D7A /* FCXRefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1F20888DAF8BDB1772072ED81DA28 /* FCXRefreshBaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,34 +31,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04C1F20888DAF8BDB1772072ED81DA28 /* FCXRefreshBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshBaseView.swift; path = SwiftFCXRefresh/FCXRefreshBaseView.swift; sourceTree = "<group>"; };
 		05C897BBD5107C795F371DC0634C9360 /* Pods-SwiftFCXRefreshDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftFCXRefreshDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1D63E8A67BDA22A230D9F6EBE0919161 /* Pods-SwiftFCXRefreshDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftFCXRefreshDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		2CF2B7CB268714D75A35FEB422DC18BC /* UIScrollView+FCXRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+FCXRefresh.swift"; path = "SwiftFCXRefresh/UIScrollView+FCXRefresh.swift"; sourceTree = "<group>"; };
+		1E1E9A9C75A8647F958727E23D0FFD7F /* SwiftFCXRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftFCXRefresh-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3BF8CA0A226525FA9EB8751762D7E272 /* SwiftFCXRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFCXRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3602E2FC1858F33E37DD824E5A09A76A /* FCXRefreshFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshFooterView.swift; path = SwiftFCXRefresh/FCXRefreshFooterView.swift; sourceTree = "<group>"; };
+		3BF8CA0A226525FA9EB8751762D7E272 /* SwiftFCXRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftFCXRefresh.framework; path = SwiftFCXRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D0FB9801455C838D94302A2BFBE9793 /* SwiftFCXRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftFCXRefresh.modulemap; sourceTree = "<group>"; };
+		4192143649C7D2665C5795C3A62BCD35 /* FCXRefreshHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshHeaderView.swift; path = SwiftFCXRefresh/FCXRefreshHeaderView.swift; sourceTree = "<group>"; };
 		494C8D251B6655ED1164013C7899FE95 /* Pods-SwiftFCXRefreshDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftFCXRefreshDemo-umbrella.h"; sourceTree = "<group>"; };
-		4D825DE70D256068A3AE4DC9A35C256E /* SwiftFCXRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftFCXRefresh-Info.plist"; sourceTree = "<group>"; };
-		5B31584A9D7A66F7B2222FB1F486D36A /* SwiftFCXRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftFCXRefresh.modulemap; sourceTree = "<group>"; };
+		4A0BEB964175971D8D5E7F3FD6E8826F /* fcx_arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "fcx_arrow@2x.png"; path = "SwiftFCXRefresh/fcx_arrow@2x.png"; sourceTree = "<group>"; };
 		707E458A21641259A8BE558DE9698615 /* Pods-SwiftFCXRefreshDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftFCXRefreshDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8F48478A412141CF09AEB11E2636BCDF /* Pods-SwiftFCXRefreshDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftFCXRefreshDemo.modulemap"; sourceTree = "<group>"; };
-		98D87D04EEA9AF2A3BA061753C3C77B6 /* SwiftFCXRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFCXRefresh.debug.xcconfig; sourceTree = "<group>"; };
 		9AD18764F295C0805E04CA4739B60BBC /* Pods-SwiftFCXRefreshDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftFCXRefreshDemo-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A23A2AAE6A78A31915A7F1FE366C4D45 /* Pods-SwiftFCXRefreshDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftFCXRefreshDemo-frameworks.sh"; sourceTree = "<group>"; };
-		AA97036890BA9C503BF39D7E3D621248 /* Pods_SwiftFCXRefreshDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftFCXRefreshDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADEE17928C30D16DEBA1B46F6C75B913 /* SwiftFCXRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftFCXRefresh-prefix.pch"; sourceTree = "<group>"; };
-		B265EEFBAE3B522EC5D59F49A70AE060 /* fcx_arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "fcx_arrow@2x.png"; path = "SwiftFCXRefresh/fcx_arrow@2x.png"; sourceTree = "<group>"; };
-		B3B5C0872BA2147E89EBC5ED9ABC7FF8 /* SwiftFCXRefresh.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SwiftFCXRefresh.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B71D3688229E44ECDB39A1922FB27AD7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		C1FE9213507F1031CDDF29744967A6D3 /* FCXRefreshFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshFooterView.swift; path = SwiftFCXRefresh/FCXRefreshFooterView.swift; sourceTree = "<group>"; };
-		C49410A3A8D2DC324DCB53A48F097465 /* SwiftFCXRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftFCXRefresh-umbrella.h"; sourceTree = "<group>"; };
-		CB046A0878292607A2D655749BA79A95 /* SwiftFCXRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftFCXRefresh-dummy.m"; sourceTree = "<group>"; };
-		D123D7C63BCB1A1D83147E9280BC0350 /* FCXRefreshHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshHeaderView.swift; path = SwiftFCXRefresh/FCXRefreshHeaderView.swift; sourceTree = "<group>"; };
-		DD35ED2B73AB3D9605B4B3518B0D3A3F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AA97036890BA9C503BF39D7E3D621248 /* Pods_SwiftFCXRefreshDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftFCXRefreshDemo.framework; path = "Pods-SwiftFCXRefreshDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B772E755959055ABE7357EDD93A5D0D9 /* SwiftFCXRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftFCXRefresh-Info.plist"; sourceTree = "<group>"; };
+		D7CAB313FF1322D60B0BD3EA4A91C288 /* UIScrollView+FCXRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+FCXRefresh.swift"; path = "SwiftFCXRefresh/UIScrollView+FCXRefresh.swift"; sourceTree = "<group>"; };
+		D882C1E817E7CC0AE87CABCD03A35EAB /* SwiftFCXRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFCXRefresh.debug.xcconfig; sourceTree = "<group>"; };
+		DC676195EAFFE79454B86D3F6EC67E7F /* SwiftFCXRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftFCXRefresh-dummy.m"; sourceTree = "<group>"; };
+		E39B1FFF0B26C6818033F8CD8F0B7983 /* SwiftFCXRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftFCXRefresh-prefix.pch"; sourceTree = "<group>"; };
+		E8B6E971580D143D9B637D1EC97918D9 /* FCXRefreshBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FCXRefreshBaseView.swift; path = SwiftFCXRefresh/FCXRefreshBaseView.swift; sourceTree = "<group>"; };
 		F5D82E44D5CC7032E73BC3D2987145CC /* Pods-SwiftFCXRefreshDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftFCXRefreshDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		FCA93101DEBB971E750200C6BD94C169 /* SwiftFCXRefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFCXRefresh.release.xcconfig; sourceTree = "<group>"; };
 		FD761615454DB3803226E3729164EF83 /* Pods-SwiftFCXRefreshDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftFCXRefreshDemo-dummy.m"; sourceTree = "<group>"; };
-		FDCAF8BB9BF39C05AEB162D0D2F10E7A /* SwiftFCXRefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftFCXRefresh.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,25 +67,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B5D60B0AED0C7DF095322D90B717E16 /* Frameworks */ = {
+		F77110F62052DC234AB5475960BEAECF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBCAEF8ADDD702A651F76288246CECE6 /* Foundation.framework in Frameworks */,
+				1B71CAAC01DB04F11BE9CEE90220EBF5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03BB769FD4A592AB428C525A479075D0 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				62D70F009A42D565D86D967A3F51D3F1 /* SwiftFCXRefresh */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		305E67561137F9F9903589E2D0F6D53B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,50 +103,24 @@
 			path = "Target Support Files/Pods-SwiftFCXRefreshDemo";
 			sourceTree = "<group>";
 		};
-		62D70F009A42D565D86D967A3F51D3F1 /* SwiftFCXRefresh */ = {
+		890E8D8C1ACDC9E88E193464E2BD43AA /* SwiftFCXRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				04C1F20888DAF8BDB1772072ED81DA28 /* FCXRefreshBaseView.swift */,
-				C1FE9213507F1031CDDF29744967A6D3 /* FCXRefreshFooterView.swift */,
-				D123D7C63BCB1A1D83147E9280BC0350 /* FCXRefreshHeaderView.swift */,
-				2CF2B7CB268714D75A35FEB422DC18BC /* UIScrollView+FCXRefresh.swift */,
-				95EA590149A2FF5B4CDBA2D28952EF8E /* Pod */,
-				B7058C85DA9B3A9D0E11613758F667A6 /* Resources */,
-				872A05DEDF8F5C4CE2F5230372632629 /* Support Files */,
+				E8B6E971580D143D9B637D1EC97918D9 /* FCXRefreshBaseView.swift */,
+				3602E2FC1858F33E37DD824E5A09A76A /* FCXRefreshFooterView.swift */,
+				4192143649C7D2665C5795C3A62BCD35 /* FCXRefreshHeaderView.swift */,
+				D7CAB313FF1322D60B0BD3EA4A91C288 /* UIScrollView+FCXRefresh.swift */,
+				C037D215BD538654B67D9489D40AEAA3 /* Resources */,
+				E4D551B7D15F790C2A4D00C2A5CAB530 /* Support Files */,
 			);
 			name = SwiftFCXRefresh;
-			path = /Users/FCXPods/SwiftFCXRefresh;
-			sourceTree = "<absolute>";
-		};
-		872A05DEDF8F5C4CE2F5230372632629 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B31584A9D7A66F7B2222FB1F486D36A /* SwiftFCXRefresh.modulemap */,
-				CB046A0878292607A2D655749BA79A95 /* SwiftFCXRefresh-dummy.m */,
-				4D825DE70D256068A3AE4DC9A35C256E /* SwiftFCXRefresh-Info.plist */,
-				ADEE17928C30D16DEBA1B46F6C75B913 /* SwiftFCXRefresh-prefix.pch */,
-				C49410A3A8D2DC324DCB53A48F097465 /* SwiftFCXRefresh-umbrella.h */,
-				98D87D04EEA9AF2A3BA061753C3C77B6 /* SwiftFCXRefresh.debug.xcconfig */,
-				FDCAF8BB9BF39C05AEB162D0D2F10E7A /* SwiftFCXRefresh.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "SwiftFCXRefreshDemo/Pods/Target Support Files/SwiftFCXRefresh";
+			path = SwiftFCXRefresh;
 			sourceTree = "<group>";
 		};
-		95EA590149A2FF5B4CDBA2D28952EF8E /* Pod */ = {
+		C037D215BD538654B67D9489D40AEAA3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B71D3688229E44ECDB39A1922FB27AD7 /* LICENSE */,
-				DD35ED2B73AB3D9605B4B3518B0D3A3F /* README.md */,
-				B3B5C0872BA2147E89EBC5ED9ABC7FF8 /* SwiftFCXRefresh.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		B7058C85DA9B3A9D0E11613758F667A6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B265EEFBAE3B522EC5D59F49A70AE060 /* fcx_arrow@2x.png */,
+				4A0BEB964175971D8D5E7F3FD6E8826F /* fcx_arrow@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -174,8 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				03BB769FD4A592AB428C525A479075D0 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F08E18057B59E4F8F43F0992C47B13F4 /* Pods */,
 				D6F56262917584363890D9358489FE08 /* Products */,
 				305E67561137F9F9903589E2D0F6D53B /* Targets Support Files */,
 			);
@@ -198,14 +161,37 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E4D551B7D15F790C2A4D00C2A5CAB530 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D0FB9801455C838D94302A2BFBE9793 /* SwiftFCXRefresh.modulemap */,
+				DC676195EAFFE79454B86D3F6EC67E7F /* SwiftFCXRefresh-dummy.m */,
+				B772E755959055ABE7357EDD93A5D0D9 /* SwiftFCXRefresh-Info.plist */,
+				E39B1FFF0B26C6818033F8CD8F0B7983 /* SwiftFCXRefresh-prefix.pch */,
+				1E1E9A9C75A8647F958727E23D0FFD7F /* SwiftFCXRefresh-umbrella.h */,
+				D882C1E817E7CC0AE87CABCD03A35EAB /* SwiftFCXRefresh.debug.xcconfig */,
+				FCA93101DEBB971E750200C6BD94C169 /* SwiftFCXRefresh.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftFCXRefresh";
+			sourceTree = "<group>";
+		};
+		F08E18057B59E4F8F43F0992C47B13F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				890E8D8C1ACDC9E88E193464E2BD43AA /* SwiftFCXRefresh */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		619EADE16A610353EAE9084F0B46A9B1 /* Headers */ = {
+		D8BC0003DDBC6345510030BAF713DCD6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B966A35C4C22CAD7FFA70FE931038252 /* SwiftFCXRefresh-umbrella.h in Headers */,
+				2E748FC0058AB536514FE46A44DE2D16 /* SwiftFCXRefresh-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,12 +208,12 @@
 /* Begin PBXNativeTarget section */
 		A209E5D0A2113E5C07E49BF018DA5D0A /* SwiftFCXRefresh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D86C3289900260E53941C84FC2AD939 /* Build configuration list for PBXNativeTarget "SwiftFCXRefresh" */;
+			buildConfigurationList = 19BAFE94D4B4C3F8EB3395BA5113DCBA /* Build configuration list for PBXNativeTarget "SwiftFCXRefresh" */;
 			buildPhases = (
-				619EADE16A610353EAE9084F0B46A9B1 /* Headers */,
-				F917A2C1322E287981F909D4C8249A96 /* Sources */,
-				5B5D60B0AED0C7DF095322D90B717E16 /* Frameworks */,
-				A7D8ABB6404D67C1C4ED4C9BBBCEF885 /* Resources */,
+				D8BC0003DDBC6345510030BAF713DCD6 /* Headers */,
+				2D7C7C769EE891FDFF61F41E2E4A080D /* Sources */,
+				F77110F62052DC234AB5475960BEAECF /* Frameworks */,
+				4D941D764BBFF56A765F2C17F97EC66A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -286,11 +272,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A7D8ABB6404D67C1C4ED4C9BBBCEF885 /* Resources */ = {
+		4D941D764BBFF56A765F2C17F97EC66A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607B08AA8C7BEE919388ABEBD346C99E /* fcx_arrow@2x.png in Resources */,
+				7736A1A24F7D78B8E5CE7875E075A8AC /* fcx_arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,23 +290,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2D7C7C769EE891FDFF61F41E2E4A080D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6216C8ED836F50E23816188C53C9E952 /* FCXRefreshBaseView.swift in Sources */,
+				0A9185299A3A37D8BD422592AB44C49C /* FCXRefreshFooterView.swift in Sources */,
+				8C00700BE770078005BC283851E0F260 /* FCXRefreshHeaderView.swift in Sources */,
+				AC68C854BC8A8D354E43585CE37F16EA /* SwiftFCXRefresh-dummy.m in Sources */,
+				53E1C0E9C3DC12586CD414B7060B21C3 /* UIScrollView+FCXRefresh.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA42F33287B60CE0999947CE76C66641 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BFD3B3786ABDEE8A374395973BA9055A /* Pods-SwiftFCXRefreshDemo-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F917A2C1322E287981F909D4C8249A96 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FC4DD43A2C7E2AF49848A6F85DD34D7A /* FCXRefreshBaseView.swift in Sources */,
-				E6E1D8C65FE474E6681C3BB99409877F /* FCXRefreshFooterView.swift in Sources */,
-				432EF95C85867BA8DC89541315A60C30 /* FCXRefreshHeaderView.swift in Sources */,
-				C434CC5972F8BEF0CFC688D22C18C41B /* SwiftFCXRefresh-dummy.m in Sources */,
-				25D3816CB6E68FCCC259F1ABAE381ADC /* UIScrollView+FCXRefresh.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +322,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		469568F008A6F54A16F30B2DE5DECE5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCA93101DEBB971E750200C6BD94C169 /* SwiftFCXRefresh.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh.modulemap";
+				PRODUCT_MODULE_NAME = SwiftFCXRefresh;
+				PRODUCT_NAME = SwiftFCXRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -389,7 +407,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -459,9 +478,9 @@
 			};
 			name = Debug;
 		};
-		AAF7F9CBD56F78B6F4A1E37D708A269C /* Release */ = {
+		8D7EA30AA21793F09C9901F0B071E997 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDCAF8BB9BF39C05AEB162D0D2F10E7A /* SwiftFCXRefresh.release.xcconfig */;
+			baseConfigurationReference = D882C1E817E7CC0AE87CABCD03A35EAB /* SwiftFCXRefresh.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -483,13 +502,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		ABF7E43C34F9063EA672BA6F2FD294F2 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -524,37 +542,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		BD23EC46E75389619E864BFDE4AA444B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98D87D04EEA9AF2A3BA061753C3C77B6 /* SwiftFCXRefresh.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftFCXRefresh/SwiftFCXRefresh.modulemap";
-				PRODUCT_MODULE_NAME = SwiftFCXRefresh;
-				PRODUCT_NAME = SwiftFCXRefresh;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		EAF4C0B4995647FE0A596C8B51802342 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -592,11 +579,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D86C3289900260E53941C84FC2AD939 /* Build configuration list for PBXNativeTarget "SwiftFCXRefresh" */ = {
+		19BAFE94D4B4C3F8EB3395BA5113DCBA /* Build configuration list for PBXNativeTarget "SwiftFCXRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD23EC46E75389619E864BFDE4AA444B /* Debug */,
-				AAF7F9CBD56F78B6F4A1E37D708A269C /* Release */,
+				8D7EA30AA21793F09C9901F0B071E997 /* Debug */,
+				469568F008A6F54A16F30B2DE5DECE5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

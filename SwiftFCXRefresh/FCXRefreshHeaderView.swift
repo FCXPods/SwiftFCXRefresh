@@ -30,7 +30,6 @@ open class FCXRefreshHeaderView: FCXRefreshBaseView {
         normalText = "下拉即可刷新"
         pullingText = "松开即可刷新"
         loadingText = "正在刷新..."
-        
         statusLabel.text = normalText
         dateLabel.text = currentDateString()
     }
@@ -92,7 +91,7 @@ open class FCXRefreshHeaderView: FCXRefreshBaseView {
         }
     }
     
-    open override func fcxRefreshStateNormal() {
+    open override func fcxChangeToStatusNormal() {
         statusLabel.text = normalText
         activityView.stopAnimating()
         arrowImageView.isHidden = false
@@ -102,14 +101,14 @@ open class FCXRefreshHeaderView: FCXRefreshBaseView {
         })
     }
     
-    open override func fcxRefreshViewStatePulling() {
+    open override func fcxChangeToStatusPulling() {
         statusLabel.text = pullingText
         UIView.animate(withDuration: 0.2, animations: {
             self.arrowImageView.transform = CGAffineTransform.init(rotationAngle: 0.000001 - .pi)
         })
     }
     
-    open override func fcxRefreshViewStateLoading() {
+    open override func fcxChangeToStatusLoading() {
         statusLabel.text = loadingText
         activityView.startAnimating()
         arrowImageView.isHidden = true
@@ -123,7 +122,7 @@ open class FCXRefreshHeaderView: FCXRefreshBaseView {
         refreshHandler?(self)
     }
         
-    open override func fcxRefreshBaseViewUpdateRefreshDate() {
+    open override func fcxChangeToRefreshDate() {
         dateLabel.text = currentDateString()
     }
     
