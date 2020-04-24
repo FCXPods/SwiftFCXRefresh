@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author             = { "fengchuanxiang" => "fengchuanxiang@126.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/FCXPods/SwiftFCXRefresh.git", :tag => s.version }
-  s.source_files  = "Sources/"
+  s.source_files  = "Sources/*.swift"
   s.resources = "Sources/*.png"
   s.requires_arc = true
 end
