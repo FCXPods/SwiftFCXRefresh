@@ -59,7 +59,7 @@ headerRefreshView?.autoRefresh()
 上拉加载更多
 
 ```swift
-footerRefreshView = tableView.addFCXRefreshAutoFooter { [weak self] (refreshHeader) in
+footerRefreshView = tableView.addFCXRefreshAutoFooter { [weak self] (refreshFooter) in
     self?.loadMoreAction()
 }
 ```
@@ -67,7 +67,7 @@ footerRefreshView = tableView.addFCXRefreshAutoFooter { [weak self] (refreshHead
 自动上拉刷加载更多
 
 ```swift
-footerRefreshView = tableView.addFCXRefreshAutoFooter { [weak self] (refreshHeader) in
+footerRefreshView = tableView.addFCXRefreshAutoFooter { [weak self] (refreshFooter) in
     self?.loadMoreAction()
 }
 ```
@@ -94,7 +94,7 @@ headerRefreshView = tableView.addFCXRefreshHeader { [weak self] (refreshHeader) 
     print("current percent", percent)
 })
 
-footerRefreshView = tableView.addFCXRefreshFooter { [weak self] (refreshHeader) in
+footerRefreshView = tableView.addFCXRefreshFooter { [weak self] (refreshFooter) in
     self?.loadMoreAction()
 }.pullingPercentHandler { (percent) in
     print("current percent", percent)

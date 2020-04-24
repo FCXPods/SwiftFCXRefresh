@@ -44,11 +44,11 @@ class RefreshTableViewController: UITableViewController {
 
         //自动上拉加载
         if selectedRow == 2 {
-            footerRefreshView = tableView.addFCXRefreshAutoFooter { [weak self] (refreshHeader) in
+            footerRefreshView = tableView.addFCXRefreshAutoFooter { [weak self] (refreshFooter) in
                 self?.loadMoreAction()
             }
         } else {//普通上拉记载
-            footerRefreshView = tableView.addFCXRefreshFooter { [weak self] (refreshHeader) in
+            footerRefreshView = tableView.addFCXRefreshFooter { [weak self] (refreshFooter) in
                 self?.loadMoreAction()
             }
         }

@@ -14,7 +14,7 @@ let package = Package(
     targets: [
         .target(
             name: "SwiftFCXRefresh",
-            dependencies: []),
+            path: "Sources"),
         .testTarget(
             name: "SwiftFCXRefreshTests",
             dependencies: ["SwiftFCXRefresh"]),
