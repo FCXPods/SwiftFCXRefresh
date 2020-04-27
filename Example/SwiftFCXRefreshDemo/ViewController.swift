@@ -72,7 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case 9:
             cell.textLabel?.text = "上下拉刷新（隐藏状态和时间）"
         default:
-            break;
+            break
         }
         return cell
     }

@@ -1,13 +1,16 @@
 # SwiftFCXRefresh
-常用的上下拉刷新功能都支持可自定义，只需简单的两三行代码即可完成，主要支持以下功能：
 
-- 普通上下拉刷新
-- 自动上下拉刷新
-- 上拉无更多数据控制
-- 上下拉百分比显示
-- 自定义上下拉动画
+简单的上下拉刷新控件，主要包含以下功能：
+
+- [x] 普通上下拉刷新
+- [x] 自动下拉刷新
+- [x] 上拉无更多数据控制
+- [x] 上下拉百分比显示
+- [x] 自定义上下拉动画
+- [x] 上拉底部间距控制
 
 ## 环境
+
 - Xcode 11+
 - Swift 5.2+
 - iOS 8.0+
@@ -37,42 +40,45 @@ dependencies: [
 把Sources下文件导入即可
 
 ## 如何使用
-包含头文件
+
+###包含头文件
 
 ```swift
 import SwiftFCXRefresh
 ```
-下拉刷新
+
+### 上下拉刷新
 
 ```swift
+//下拉刷新
 headerRefreshView = tableView.addFCXRefreshHeader { [weak self] (refreshHeader) in
     self?.refreshAction()
+    
+//上拉加载更多
+footerRefreshView = tableView.addFCXRefreshFooter { [weak self] (refreshFooter) in
+    self?.loadMoreAction()
+}
+
+//自动上拉加载更多
+footerRefreshView = tableView.addFCXRefreshAutoFooter { [weak self] (refreshFooter) in
+    self?.loadMoreAction()
 }
 ```
 
-自动下拉刷新调用
+### 刷新自定义设置
 
 ```swift
+//自动下拉刷新
 headerRefreshView?.autoRefresh()
+
+//自动上拉加载更多
+footerRefreshView?.refreshType = .autoFooter
+
+//上拉底部间距设置
+footerRefreshView?.loadMoreBottomExtraSpace = 30
 ```
 
-上拉加载更多
-
-```swift
-footerRefreshView = tableView.addFCXRefreshAutoFooter { [weak self] (refreshFooter) in
-    self?.loadMoreAction()
-}
-```
-
-自动上拉刷加载更多
-
-```swift
-footerRefreshView = tableView.addFCXRefreshAutoFooter { [weak self] (refreshFooter) in
-    self?.loadMoreAction()
-}
-```
-
-上下拉百分比显示
+### 上下拉百分比
 
 ```swift
 headerRefreshView?.pullingPercentHandler = { (percent) in
@@ -84,7 +90,7 @@ footerRefreshView?.pullingPercentHandler = { (percent) in
 }
 ```
 
-上下拉刷新、百分比链式调用
+### 上下拉刷新、百分比链式调用
 
 ```swift
 headerRefreshView = tableView.addFCXRefreshHeader { [weak self] (refreshHeader) in

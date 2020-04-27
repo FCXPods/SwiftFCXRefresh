@@ -91,11 +91,11 @@ open class FCXRefreshFooterView: FCXRefreshBaseView {
         // 当前scrollView的contentOffsetY超出offsetY的高度
         let beyondOffsetHeight = scrollView.contentOffset.y - offSetY
         guard beyondOffsetHeight > 0 else {
-            return;
+            return
         }
         if refreshType == .autoFooter {//如果是自动加载更多
             //大于偏移量，转为加载更多loading
-            state = .loading;
+            state = .loading
             return
         }
         
@@ -114,7 +114,7 @@ open class FCXRefreshFooterView: FCXRefreshBaseView {
         }
         
         if pullingPercentHandler != nil {
-            pullingPercent = min(beyondOffsetHeight, hangingOffsetHeight)/hangingOffsetHeight;
+            pullingPercent = min(beyondOffsetHeight, hangingOffsetHeight)/hangingOffsetHeight
         }
     }
     

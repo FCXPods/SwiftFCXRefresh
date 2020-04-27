@@ -34,7 +34,7 @@ open class FCXRefreshBaseView: UIView {
         if #available(iOS 11.0, *) {
             return scrollView.adjustedContentInset
         } else {
-            return scrollView.contentInset;
+            return scrollView.contentInset
         }
     }
     public var pullingPercent: CGFloat = 0 {
@@ -186,10 +186,10 @@ extension FCXRefreshBaseView {
         contentOffsetObs = scrollView?.observe(\UIScrollView.contentOffset, options: .new, changeHandler: {  [weak self] (scrollView, _) in
             //正在刷新
             if self?.state == .loading {
-                return;
+                return
             }
             // contentInset可能会变
-            self?.scrollViewOriginalEdgeInsets = scrollView.contentInset;
+            self?.scrollViewOriginalEdgeInsets = scrollView.contentInset
             self?.scrollViewContentOffsetDidChange(scrollView: scrollView)
         })
         if refreshType != .header {
@@ -231,7 +231,7 @@ extension FCXRefreshBaseView {
         case #keyPath(UIScrollView.contentOffset):
             //正在刷新
             if state == .loading {
-                return;
+                return
             }
             // contentInset可能会变
             scrollViewOriginalEdgeInsets = scrollView.contentInset

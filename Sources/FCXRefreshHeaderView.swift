@@ -87,7 +87,7 @@ open class FCXRefreshHeaderView: FCXRefreshBaseView {
         }
         let offsetHeight = -scrollView.contentOffset.y - edgeTop
         if offsetHeight >= 0 {
-            pullingPercent = min(offsetHeight, hangingOffsetHeight)/hangingOffsetHeight;
+            pullingPercent = min(offsetHeight, hangingOffsetHeight)/hangingOffsetHeight
         }
     }
     

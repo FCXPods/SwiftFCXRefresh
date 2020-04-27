@@ -13,20 +13,20 @@ extension UIScrollView {
     open func addFCXRefreshHeader(handler: @escaping (FCXRefreshBaseView) -> Void) -> FCXRefreshHeaderView {
         let refreshHeaderView = FCXRefreshHeaderView.init(frame: CGRect.init(x: 0, y: -55, width: self.frame.size.width, height: 55), hangingOffsetHeight: 55, refreshType: .header, refreshHandler: handler)
         self.addSubview(refreshHeaderView)
-        return refreshHeaderView;
+        return refreshHeaderView
     }
     
     @discardableResult
     open func addFCXRefreshFooter(handler: @escaping (FCXRefreshBaseView) -> Void) -> FCXRefreshFooterView {
         let refreshFooterView = FCXRefreshFooterView.init(frame: CGRect.init(x: 0, y: 0, width: self.frame.size.width, height: 55), hangingOffsetHeight: 55, refreshType: .footer, refreshHandler: handler)
         self.addSubview(refreshFooterView)
-        return refreshFooterView;
+        return refreshFooterView
     }
     
     @discardableResult
     open func addFCXRefreshAutoFooter(handler: @escaping (FCXRefreshBaseView) -> Void) -> FCXRefreshFooterView {
         let refreshView = FCXRefreshFooterView.init(frame: CGRect.init(x: 0, y: 0, width: self.frame.size.width, height: 55), hangingOffsetHeight: 55, refreshType: .autoFooter, refreshHandler: handler)
         self.addSubview(refreshView)
-        return refreshView;
+        return refreshView
     }
 }

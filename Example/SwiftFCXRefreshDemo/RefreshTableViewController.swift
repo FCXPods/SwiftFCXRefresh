@@ -110,7 +110,7 @@ class RefreshTableViewController: UITableViewController {
             navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .refresh, target: self, action: #selector(autoRefresh))
         case 2://自动加载更多
             self.title = "自动上拉加载更多"
-            footerRefreshView?.refreshType = .autoFooter;
+            footerRefreshView?.refreshType = .autoFooter
         case 3:
             self.title = "上拉无更多数据"
         case 4://显示百分比
@@ -158,12 +158,12 @@ class RefreshTableViewController: UITableViewController {
              */
         case 5://底部间隙
             self.title = "底部间隙"
-            footerRefreshView?.loadMoreBottomExtraSpace = 30;
+            footerRefreshView?.loadMoreBottomExtraSpace = 30
         case 6://自定义颜色
             self.title = "自定义颜色"
-            headerRefreshView?.dateLabel.textColor = .red;
-            headerRefreshView?.statusLabel.textColor = .blue;
-            footerRefreshView?.statusLabel.textColor = .magenta;
+            headerRefreshView?.dateLabel.textColor = .red
+            headerRefreshView?.statusLabel.textColor = .blue
+            footerRefreshView?.statusLabel.textColor = .magenta
         case 7://自定义文本
             self.title = "自定义文本"
             headerRefreshView?.normalText = "normal"
@@ -178,7 +178,7 @@ class RefreshTableViewController: UITableViewController {
             self.title = "隐藏时间"
             headerRefreshView?.arrowOffsetX = 35
             headerRefreshView?.hideDateView()
-            break;
+            break
         case 9://隐藏状态和时间
             self.title = "隐藏状态和时间"
             headerRefreshView?.hideStatusAndDateView()
