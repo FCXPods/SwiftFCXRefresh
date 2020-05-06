@@ -29,6 +29,6 @@
 #### Added
 - Swift 4兼容
 
-## [0.1.0](https://github.com/FCXPods/SwiftFCXRefresh/releases/tag/0.1.0) (2020-07-02)
+## [0.1.0](https://github.com/FCXPods/SwiftFCXRefresh/releases/tag/0.1.0) (2017-07-02)
 
 First public release.
