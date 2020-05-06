@@ -22,4 +22,13 @@
 
 #### Added
 - Swift 5.2兼容
-- 刷新空间增加更多自定义内容
+- 刷新控件增加更多自定义内容
+
+## [0.1.1](https://github.com/FCXPods/SwiftFCXRefresh/releases/tag/0.1.1) (2017-10-03)
+
+#### Added
+- Swift 4兼容
+
+## [0.1.0](https://github.com/FCXPods/SwiftFCXRefresh/releases/tag/0.1.0) (2020-07-02)
+
+First public release.
