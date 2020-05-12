@@ -2,7 +2,7 @@
 
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/SwiftFCXRefresh.svg)](http://cocoadocs.org/docsets/SwiftFCXRefresh/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Swift Package Manager compatible](https://img.shields.io/badge/Swift Package Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Platform](http://img.shields.io/cocoapods/p/SwiftFCXRefresh.svg?style=flat)](https://github.com/FCXPods/SwiftFCXRefresh)
 
 [SwiftFCXRefresh](https://github.com/FCXPods/SwiftFCXRefresh)是一个使用Swift编写、用于上下拉刷新的控件。
