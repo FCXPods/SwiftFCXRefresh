@@ -7,7 +7,7 @@
 
 [SwiftFCXRefresh](https://github.com/FCXPods/SwiftFCXRefresh)是一个使用Swift编写、用于上下拉刷新的控件。
 
-## 特性[]()
+## 特性
 
 - [x] 普通上下拉刷新
 - [x] 自动下拉刷新
