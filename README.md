@@ -1,6 +1,13 @@
 # SwiftFCXRefresh
 
-简单的上下拉刷新控件，主要包含以下功能：
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/SwiftFCXRefresh.svg)](http://cocoadocs.org/docsets/SwiftFCXRefresh/)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift Package Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![Platform](http://img.shields.io/cocoapods/p/SwiftFCXRefresh.svg?style=flat)](https://github.com/FCXPods/SwiftFCXRefresh)
+
+[SwiftFCXRefresh](https://github.com/FCXPods/SwiftFCXRefresh)是一个使用Swift编写、用于上下拉刷新的控件。
+
+## 特性[]()
 
 - [x] 普通上下拉刷新
 - [x] 自动下拉刷新
@@ -109,4 +116,9 @@ footerRefreshView = tableView.addFCXRefreshFooter { [weak self] (refreshFooter) 
 
 ## 显示效果：
 
-![](FCXRefresh.gif)
+![FCXRefresh.gif](https://raw.githubusercontent.com/FCXPods/SwiftFCXRefresh/master/FCXRefresh.gif)
+
+
+## License
+
+SwiftFCXRefresh is released under the MIT license. See [LICENSE](https://github.com/FCXPods/SwiftFCXRefresh/blob/master/LICENSE) for details.
